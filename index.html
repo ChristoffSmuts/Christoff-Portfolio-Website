@@ -16,7 +16,7 @@
         <div class="Services">
             <img src="images/services.gif" class="Services">
         
-        </div>
+        </div> 
         </nav>
 <body>
     
@@ -24,33 +24,17 @@
     <!-- Contact form code below -->
 
     <div class="container">
-        <form onsubmit = "sendEmail(); reset(); return false;">
+        <form action="https://formsubmit.co/Christoff.Smuts@gmail.com" method="POST">
             <h3>GET IN TOUCH</h3>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email Adress" required>
-            <input type="text" id="phone" placeholder="Phone Number." required>
-            <textarea id="message" rows="4" placeholder="How can I assist you?"></textarea>
+            
+            <!-- <input type="email" id="email" placeholder="Your Email Adress" required>  -->
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="number" name="Phone Number" placeholder="Phone Number." required>
+            <textarea type="text" name="Textbox" rows="4" placeholder="How can I assist you?"></textarea>
             <button type="submit">Send</button>
         </form>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "christoffel.smuts@younglings.africa",
-                Password : "2195B43F4645DBF99492654A5CD5B5F1DC30",
-                To : 'christoffel.smuts@younglings.africa',
-                From : document.getElementById("email").value,
-                Subject : "Enquiry Recieved",
-                Body : document.getElementById("message").value,
-            }).then(
-              message => alert(message)
-            );
-        }
-
-    </script>
 
 </body>
 </html>
