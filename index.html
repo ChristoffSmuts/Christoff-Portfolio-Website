@@ -4,53 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christoff Smuts Portfolio</title>
-    <link rel = "stylesheet" href = style.css>
-
+    <title>Portfolio Christoff Smuts</title>
 </head>
-        <nav>
-            <img src="images/logo2.png" class = "logo">
-            
-            <div id = "header"></div>
-            <div class = "container"></div>
-        <div class="Services">
-            <img src="images/services.gif" class="Services">
-        
-        </div>
-        </nav>
-<body>
-    
 
-    <!-- Contact form code below -->
+    <link rel = "stylesheet" href = "Files/styles.css">
+<body>
+    <div>
+    <H1>Christoff Smuts</H1>
+    <H2>Multimedia Professional</H2>
+    </div>
 
     <div class="container">
-        <form onsubmit = "sendEmail(); reset(); return false;">
-            <h3>GET IN TOUCH</h3>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email Adress" required>
-            <input type="text" id="phone" placeholder="Phone Number." required>
-            <textarea id="message" rows="4" placeholder="How can I assist you?"></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <h3>
+            <img src="Files/Images/background.png" alt="Photograph of Christoff Smuts" class = "climgProfilePic">
+            Let me give your project the treatment it deserves.
+        </h3>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "christoffel.smuts@younglings.africa",
-                Password : "2195B43F4645DBF99492654A5CD5B5F1DC30",
-                To : 'christoffel.smuts@younglings.africa',
-                From : document.getElementById("email").value,
-                Subject : "Enquiry Recieved",
-                Body : document.getElementById("message").value,
-            }).then(
-              message => alert(message)
-            );
-        }
 
-    </script>
+    <div>
+    <a href = "Files/photography.html"><button class = "clmenuButton">Photography</button></a>
+    <button class = "clmenuButton">Videography</button>
+    <a href = "Files/WebDevelopment.html"><button class = "clmenuButton">Web Development</button></a>
+    <a href = "Files/ContactPage.html">
+    <button class = "clmenuButton">Contact Me</button>
+    </a>
+    </div>
 
 </body>
 </html>
