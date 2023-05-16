@@ -1,0 +1,145 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center; 
+    /* height: 100vh; */
+    text-align: center;
+    margin: 2% 10%;
+    padding: 1% 1%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    line-height: 0.9;
+    text-align: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 img {
+    margin-right: 10px; /* Optional spacing between the image and text */
+}
+
+.climgProfilePic{
+    border-radius: 10%;
+    margin: 5%;
+}
+
+.clmenuButton{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: red;
+    color: white;
+    width: 142pt;
+    height: 49pt;
+    margin-left: 6pt;
+    font-size: 14pt;
+    border-width: 3pt;
+    margin-top: 10pt;
+}
+
+.clformContainer{
+   
+        background-color: red;
+        border-radius: 10%;
+        border-style: solid;
+        border-color: white;
+        padding: 10pt;
+        max-width: 300pt;
+        min-width: 200pt;
+        text-align: center;
+        position: relative;
+        margin:auto;
+        box-shadow: 0 2px 4px rgb(255, 0, 0);
+      }
+      
+      .clinputField {
+        display: block;
+        margin: 10px auto;
+        background-color: black;
+        border-color: white;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        border-radius: 10%;
+        width: 200pt;
+        
+      }
+
+      textarea{
+        max-width: 200pt;
+        max-height: 100pt;
+        min-width: 200pt;
+        min-height:100pt;
+
+        background-color: black;
+        border-color: white;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        border-radius: 5%;
+      }
+
+      .clsubmitBtn{
+
+        background-color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight:bold;
+        border-radius: 10%;
+        border-style: solid;
+        border-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        color: white;
+        width: 81pt;
+        height: 33pt;
+        margin-left: 6pt;
+        font-size: 15pt;
+        
+      }
+
+      ::placeholder{
+        font-style: italic;
+        font-weight: bold;
+        color: white;
+      }
+
+      .portfolioPicture{
+        max-width: 100pt;
+        max-height: 100pt;
+        /* border-radius: 10%; */
+        margin: 10pt;
+      
+      }
+
+      .container-photos{
+        margin-left: 10%;
+        margin-right: 10%
+      }
+
+      ul li{
+        
+        display: flex;
+        justify-content: left;
+        color: white;
+        margin-left:10%;
+        left:30%;
+        right:30%;
+      }
+
+      ul li::marker {
+        color: red; /* Change the color to your desired color */
+      }
