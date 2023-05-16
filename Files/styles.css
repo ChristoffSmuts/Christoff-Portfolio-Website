@@ -143,3 +143,9 @@ h3 img {
       ul li::marker {
         color: red; /* Change the color to your desired color */
       }
+
+
+      video{
+        width: 400px;
+        height: 300px;
+      }
